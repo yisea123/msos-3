@@ -140,11 +140,6 @@ target_link_libraries(msos_test PRIVATE msos_main)
 include (GenerateBinary)
 generate_binary(msos_test ${vendor})
 
-set_target_properties(msos_test
-    PROPERTIES
-        SUFFIX ${HAL_EXECUTABLE_SUFFIX}
-)
-
 if (${vendor} STREQUAL "STM32")
 
     find_program(truncate_exec truncate)
