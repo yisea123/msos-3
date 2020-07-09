@@ -72,5 +72,3 @@ if (NOT DISABLE_TESTS OR DISABLE_ST_TESTS)
     enable_testing()
     add_subdirectory(test)
 endif ()
-
-set (NO_DEPS_UPDATE ON CACHE BOOL "Dependencies downloaded, and shouln't be changed when cmake-regenerate")
